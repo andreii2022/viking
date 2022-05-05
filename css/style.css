@@ -15,6 +15,11 @@ a{
     color: inherit;
     text-decoration: none;
 
+
+}
+
+ul{
+    list-style: none;
 }
 .container{
     max-width: 1220px;
@@ -78,5 +83,65 @@ line-height: 42px;
 }
 
 .logo{
-    padding-top: 170px;
+    padding-top: 178px;
 }
+
+.about__inner{
+    display: flex;
+
+}
+.about__info{
+    width: 375px;
+    margin-right: 50px;
+    flex: none;
+}
+
+.about_info-item{
+    margin-bottom: 25px;
+    color:  #E5E5E5;;
+}
+
+.about_info-item span{
+    display: block;
+}
+.about__text p{
+    margin-bottom: 25px;
+}
+.video{
+    background-image: url('../images/video-bg.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+.video__text{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    color: #85CCDC;
+    padding-top: 444px;
+
+}
+.video__text span{
+    display: block;
+    padding-right: 285px;
+
+}
+.video__btn{
+    padding-left: 112px;
+    position: relative;
+}
+.video__btn::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    background-image: url('../images/youtube-btn.svg');
+
+
+}
+
+
