@@ -1,6 +1,7 @@
 $(function(){
+
     $('[data-fancybox]').fancybox({
-        youtube:{
+        youtube: {
             controls: 0,
             showinfo: 0
         }

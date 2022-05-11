@@ -147,4 +147,28 @@ line-height: 42px;
 
 }
 
+.seasons__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px 75px;
+    counter-reset: counter;
+
+}
+
+.seasons__item{
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    list-style: none;
+    position: relative;
+}
+
+.seasons__item::before{
+    content: '0' counter(counter);
+    counter-increment: counter;
+    position: absolute;
+}
+
 
