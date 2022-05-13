@@ -208,9 +208,42 @@ line-height: 42px;
     opacity: 0;
     transition: all .3s;
     z-index: 2;
+}
 
 
+.heroes__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroes__slider-img{
+    max-width: 775px;
+}
+
+.heroes__text{
+    max-width: 350px;
+}
+
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
+
+
+.slick-prev{
+
+}
+
+.slick-next{
+    
+}
+
+.heroes__name{
+
+}
+
+
 
 
