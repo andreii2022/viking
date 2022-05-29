@@ -1,11 +1,6 @@
 $(function(){
 
-    $('[data-fancybox]').fancybox({
-        youtube: {
-            controls: 0,
-            showinfo: 0
-        }
-    });
+   
 
     $('.heroes__slider-img').slick({
         slidesToShow: 1,
