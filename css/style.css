@@ -86,7 +86,7 @@ line-height: 42px;
 }
 
 .logo{
-    padding-top: 178px;
+    padding-top: 17vh;
 }
 
 .about__inner{
@@ -124,7 +124,7 @@ line-height: 42px;
     font-size: 72px;
     line-height: 84px;
     color: #85CCDC;
-    padding-top: 444px;
+    padding-top: 45vh;
     margin-bottom: 40px;
 
 }
@@ -152,7 +152,7 @@ line-height: 42px;
 
 .seasons__inner{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(284px,1fr));
     grid-gap: 100px 75px;
     counter-reset: counter;
     padding-top: 50px;
@@ -160,7 +160,6 @@ line-height: 42px;
 }
 
 .seasons__item{
-    width: 350px;
     height: 250px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -335,4 +334,92 @@ margin-bottom: 44px;
 
 /* end season-1 */
 
+
+/* start media */
+
+@media ( max-width: 1366px){
+    .logo__img{
+        width: 50%;
+    }
+    .menu__list-link{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .about__info{
+        width: 250px;
+    }
+
+    @media ( max-width: 1088px){
+        .seasons__item{
+            height: 340px;
+        }
+    }
+
+
+}
+
+@media ( max-width: 768px){
+    .about__inner{
+        display: block;
+    }
+    .section-page{
+        padding: 50px 0;
+    }
+    .title{
+        margin-bottom: 50px;
+    }
+    .body{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .video__text{
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .video__btn{
+        margin-right: 0;
+        padding-left: 62px;
+
+    }
+
+    .video__btn::before{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        top: -16px;
+    }
+
+    .seasons__inner{
+        grid-gap: 80px 35px;
+    }
+
+    .video__text span{
+        padding-right: 200px;
+    }
+}
+
+
+
+@media ( max-width: 640px){
+    .menu__list{
+        display: none;
+        }
+    .logo{
+        padding-top: 21vh;
+        }
+    }
+
+
+@media ( max-width: 414px){
+    seasons__item{
+        height: 203px;
+     }
+}
+
+
+
+
+/* end media */
 
