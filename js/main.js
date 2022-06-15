@@ -19,4 +19,60 @@ $(function(){
         
       });
 
-});
+
+
+      function decryptMessage(message) {
+
+        // write code here
+    
+    /**
+ * @param {string} target
+ *
+ * @returns {boolean}
+ */
+function isWerewolf(target) {
+  let direct = '';
+  let reversed = '';
+  
+  for(let i=target.length-1; i>=0; i--){
+    let isLetter =  target[i].toLowerCase() != target[i].toUpperCase();
+
+    if(isLetter) {
+      reversed += target[i];
+    }
+  }
+
+  for (let ch of target) {
+   let isLetter =  ch.toLowerCase() != ch.toUpperCase();
+    if(isLetter) {
+      direct += ch;
+  }
+  }
+
+  if(direct.toLowerCase() == reversed.toLowerCase()) {
+    return true;
+  }
+
+  return false;
+
+  
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

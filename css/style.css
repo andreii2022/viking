@@ -349,9 +349,23 @@ margin-bottom: 44px;
         width: 250px;
     }
 
-    @media ( max-width: 1088px){
-        .seasons__item{
-            height: 340px;
+
+@media ( max-width: 1200px){
+    .heroes__inner{
+        display: block;
+    }
+    .heroes__slider-text{
+        max-width: 100%;
+        padding-top: 50px;
+    }
+    .heroes__slider-img{
+        max-width: 100%;
+    }
+}
+
+@media ( max-width: 1088px){
+    .seasons__item{
+        height: 340px;
         }
     }
 
@@ -378,6 +392,11 @@ margin-bottom: 44px;
         line-height: 56px;
     }
 
+
+    .video__text span{
+        padding-right: 200px;
+    }
+
     .video__btn{
         margin-right: 0;
         padding-left: 62px;
@@ -395,9 +414,11 @@ margin-bottom: 44px;
         grid-gap: 80px 35px;
     }
 
-    .video__text span{
-        padding-right: 200px;
+    .slick-btn{
+        display: none;
     }
+
+    
 }
 
 
